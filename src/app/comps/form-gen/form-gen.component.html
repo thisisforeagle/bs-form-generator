@@ -1,5 +1,8 @@
 <app-form-row
+  #formoutput
   *ngFor="let row of data.rows"
   [class]="row.class"
   [row]="row"
 ></app-form-row>
+<hr />
+<div class="btn btn-primary" (click)="outputForm()">Output Form HTML</div>

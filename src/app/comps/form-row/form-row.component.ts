@@ -11,4 +11,8 @@ export class formRow implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  addRow() {
+    console.log('Adding row');
+  }
 }

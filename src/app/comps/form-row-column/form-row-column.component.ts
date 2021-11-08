@@ -11,4 +11,8 @@ export class formRowColumn implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  addColumn() {
+    console.log('Adding column');
+  }
 }

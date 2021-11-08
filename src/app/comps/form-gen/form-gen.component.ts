@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { IBSForm } from '../../model/model';
 
@@ -9,10 +9,15 @@ import { IBSForm } from '../../model/model';
 })
 export class FormGenComponent implements OnInit {
   @Input() data: IBSForm;
+  @ViewChild('formoutput') formoutput: any;
 
   constructor() {}
 
   ngOnInit() {
     console.log(this.data);
+  }
+
+  outputForm() {
+    console.log(this.formoutput.nativeElement);
   }
 }
