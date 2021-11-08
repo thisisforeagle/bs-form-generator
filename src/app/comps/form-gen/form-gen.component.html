@@ -1,8 +1,9 @@
-<app-form-row
-  #formoutput
-  *ngFor="let row of data.rows"
-  [class]="row.class"
-  [row]="row"
-></app-form-row>
+<div #formoutput *ngFor="let row of data.rows" [class]="row.class">
+  <i class="fas fa-arrows-alt-h" (click)="addRow()"></i>
+  <div *ngFor="let column of row.columns" [class]="column.class">
+    <hr />
+    <i class="far fa-plus-square" (click)="addColumn()"></i>
+  </div>
+</div>
 <hr />
 <div class="btn btn-primary" (click)="outputForm()">Output Form HTML</div>
