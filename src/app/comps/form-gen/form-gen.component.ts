@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { IBSForm } from '../../model/model';
 
 @Component({
@@ -8,6 +9,7 @@ import { IBSForm } from '../../model/model';
 })
 export class FormGenComponent implements OnInit {
   @Input() data: IBSForm;
+
   constructor() {}
 
   ngOnInit() {

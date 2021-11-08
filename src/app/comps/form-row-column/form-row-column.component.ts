@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IColumn } from '../../model/model';
 
 @Component({
   selector: 'app-form-row-column',
   templateUrl: './form-row-column.component.html',
-  styleUrls: ['./form-row-column.component.css']
+  styleUrls: ['./form-row-column.component.css'],
 })
-export class FormRowColumnComponent implements OnInit {
+export class formRowColumn implements OnInit {
+  @Input() column: IColumn;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

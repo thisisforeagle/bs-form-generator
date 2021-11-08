@@ -11,7 +11,7 @@ export class AppComponent {
   form: IBSForm = {
     rows: [
       {
-        class: 'mb-2',
+        class: 'row mb-2',
         columns: [
           {
             class: 'col-sm-6',
@@ -22,7 +22,7 @@ export class AppComponent {
         ],
       },
       {
-        class: 'mb-2',
+        class: 'row mb-2',
         columns: [
           {
             class: 'col-sm-6',

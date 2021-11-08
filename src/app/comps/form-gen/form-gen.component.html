@@ -1,3 +1,5 @@
-<div class="container">
-  <app-form-row *ngFor="let row of data.rows"></app-form-row>
-</div>
+<app-form-row
+  *ngFor="let row of data.rows"
+  [class]="row.class"
+  [row]="row"
+></app-form-row>

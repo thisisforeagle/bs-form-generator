@@ -1,3 +1,4 @@
-<p>
-form-row works!
-</p>
+<app-form-row-column
+  *ngFor="let column of row.columns"
+  [class]="column.class"
+></app-form-row-column>
